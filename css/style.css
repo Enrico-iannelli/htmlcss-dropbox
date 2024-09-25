@@ -1,0 +1,83 @@
+/* # RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+/* # UTILS */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1000px;
+  max-width: 100%;
+}
+
+.list-link {
+  list-style-type: none;
+}
+
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+/* # HEADER */
+
+.page-header {
+  /* bg-structure */
+  background-color: gray;
+  padding: 10px;
+}
+
+.page-header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header .link {
+  display: inline-block;
+}
+
+/* * Hero section */
+
+.hero {
+  display: flex;
+  align-items: center;
+  /* bg-structure */
+  background-color: cyan;
+  height: 300px;
+}
+
+.hero > .container {
+  /* bg-structure */
+  background-color: yellow;
+  width: 50%;
+  height: 50%;
+}
+
+/* # MAIN */
+.first-section > .container {
+  /* bg-structure */
+  background-color: gray;
+  height: 500px;
+}
+.first-section > .product-card {
+  display: flex;
+  /* bg-structure */
+  background-color: lightgrey;
+}
+
+.product-card {
+  background-color: coral;
+  width: 25%;
+}
