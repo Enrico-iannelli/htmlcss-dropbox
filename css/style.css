@@ -67,17 +67,13 @@ a {
 
 /* # MAIN */
 .first-section > .container {
+  display: flex;
   /* bg-structure */
   background-color: gray;
   height: 500px;
 }
-.first-section > .product-card {
-  display: flex;
-  /* bg-structure */
-  background-color: lightgrey;
-}
 
 .product-card {
   background-color: coral;
-  width: 25%;
+  height: 150px;
 }
