@@ -6,10 +6,28 @@
   padding: 0;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
 a {
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
+
+section {
+  padding: 50px 0;
+}
+
 /* # UTILS */
 
 .container {
@@ -19,61 +37,83 @@ a {
   max-width: 100%;
 }
 
-.list-link {
-  list-style-type: none;
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
 }
 
-.btn {
-  background-color: dodgerblue;
-  color: white;
-  border: none;
-  padding: 5px 10px;
+.w-60 {
+  width: 60%;
 }
 
-/* # HEADER */
+.w-100 {
+  width: 100%;
+}
 
-.page-header {
-  /* bg-structure */
-  background-color: gray;
+.card {
+  border: 1px solid black;
+}
+
+.card-header {
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+/* HEADER */
+
+.header-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
 }
 
-.page-header > .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.page-header .link {
+.header-item li {
   display: inline-block;
 }
 
-/* * Hero section */
+/* # Section Hero */
 
-.hero {
+#hero .container {
+  position: relative;
+  top: 50px;
+}
+#hero .hero-content {
   display: flex;
-  align-items: center;
-  /* bg-structure */
-  background-color: cyan;
-  height: 300px;
 }
 
-.hero > .container {
-  /* bg-structure */
-  background-color: yellow;
-  width: 50%;
-  height: 50%;
+/* Section Business Plan */
+
+#business-plan {
+  padding-top: 100px;
 }
 
-/* # MAIN */
-.first-section > .container {
+#business-plan .plan-type {
   display: flex;
-  /* bg-structure */
-  background-color: gray;
-  height: 500px;
 }
 
-.product-card {
-  background-color: coral;
-  height: 150px;
+#business-plan .business-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#business-plan .business-card > * {
+  flex-grow: 1;
+}
+
+/* #DEBUG */
+
+.debug,
+.debug * {
+  background-color: darkgray;
+  border: 2px dashed black;
+  padding: 10px;
+  min-height: 50px;
 }

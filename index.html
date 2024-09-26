@@ -3,93 +3,193 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dropbox</title>
     <link rel="icon" href="./img/logo-small.ico" />
+
+    <!-- FONT AWESOME
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+     -->
+
+    <!-- OPEN SANS FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <header>
-      <div class="page-header">
-        <div class="container">
-          <!-- HEADER LOGO -->
-          <div class="header logo-container">
-            <img src="./img/logo-small.png" alt="" />
-          </div>
-          <!-- NAV BAR -->
-          <nav class="header nav-container">
-            <ul class="list-link">
-              <li class="link"><a href="#">Perchè Dropbox</a></li>
-              <li class="link"><a href="#">Funzioni</a></li>
-              <li class="link"><a href="#">Piani e Prezzi</a></li>
-            </ul>
-          </nav>
-          <nav class="header nav-container">
-            <ul class="list-link">
-              <li class="link"><a href="#">Supporto</a></li>
-              <li class="link">
-                <a href="#">Contatta l'ufficio vendite</a>
-              </li>
-              <li class="link"><a href="#">Accedi</a></li>
-            </ul>
-          </nav>
-          <!-- LOGIN BUTTON -->
-          <div class="header login-container">
-            <button class="btn">Inizia</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- HERO SECTION -->
-      <section class="hero">
-        <div class="container">
-          <!-- Hero Title -->
-          <div>
-            <h1></h1>
-          </div>
-          <div>
-            <div>
-              <p></p>
-            </div>
-            <div>
-              <img src="" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
+  <body class="debug">
+    <!-- HEADER -->
+    <header class="header-page">
+      <nav class="header-item">
+        <ul>
+          <li>LOGO</li>
+          <li>LINK</li>
+          <li>LINK</li>
+          <li>LINK</li>
+        </ul>
+      </nav>
+      <nav class="header-item">
+        <ul>
+          <li>LINK</li>
+          <li>LINK</li>
+          <li>LINK</li>
+          <li>LOGO</li>
+        </ul>
+      </nav>
     </header>
 
+    <!-- MAIN -->
     <main>
-      <!-- FIRST SECTION -->
-      <section class="first-section">
+       <!-- Section Hero -->
+      <section id="hero">
         <div class="container">
-          <div class="product-plan">
-            <h2>Trova il piano business che fa per te</h2>
-            <input type="radio" name="" id="" />Fatturazione mensile
-            <input type="radio" name="" id="" />Fatturazione annuale
+          <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+          <div class="hero-content">
+            <div class="w-40">
+              <p>
+                Finalmente tutti i tuoi strumenti, contenuti e collaboratori
+                sono accessibili dallo stesso posto. Dropbox Business è più di
+                uno spazio di archiviazione sicuro: è un modo intelligente e
+                integrato per ottimizzare il flusso di lavoro esistente.
+              </p>
+              <button>Inizia la tua prova gratuita</button>
+              <p>Annulla in qualsiasi momento</p>
+              <div>ICON</div>
+            </div>
+            <div class="w-60">IMAGE</div>
           </div>
-          <div class="product-card">Card 1</div>
-          <div class="product-card">Card 2</div>
-          <div class="product-card">Card 3</div>
-          <div class="product-card">Card 4</div>
         </div>
       </section>
-      <!-- SECOND SECTION -->
-      <section>
-        <div>
-          <img src="" alt="" />
+
+       <!-- Section Business Plan -->
+      <section id="business-plan">
+        <div class="container">
+          <h2>Trova il piano business che fa per te</h2>
+          <div class="plan-type">
+            <div class="plan-type-monthly">Fatturazione mensile</div>
+            <div class="plan-type-yearly">Fatturazione annuale</div>
+          </div>
+          <div class="business-cards">
+            <div class="card w-30">
+              <div class="card-header">(+ICON) Singolo</div>
+              <div class="card-body">
+                <h3>Professional</h3>
+                <h4>€ 12.00</h4>
+                <h5>/mese</h5>
+                <ul>
+                  <li>(+ICON) 1 utente</li>
+                  <li>(+ICON) 5 TB di spazio di archiviazione</li>
+                  <li>
+                    (+ICON) Funzioni di produttività premium e condivisione file
+                    semplice e sicura
+                  </li>
+                </ul>
+                <button>Prova gratis per 30 giorni</button>
+                <h5>oppure <a href="">acquista ora</a></h5>
+                <h4>Punti Salienti del piano</h4>
+                <ul>
+                  <li>&check;Invia file fino a 100 GB con Dropbox Transfert</li>
+                  <li>&check;Cartelle offline su dispositivi mobili</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card w-30">
+              <div class="card-header">(+ICON) Team</div>
+              <div class="card-body">
+                <h3>Advanced</h3>
+                <h4>€ 18.00</h4>
+                <h5>/utente/mese</h5>
+                <ul>
+                  <li>(+ICON) 3 o più utenti</li>
+                  <li>(+ICON) Tutto lo spazio di cui ha bisogno il tuo team</li>
+                  <li>
+                    (+ICON) Sofisticate funzioni di controllo e per tenere al
+                    sicuro tutti i file del tuo team
+                  </li>
+                </ul>
+                <button>Prova gratis per 30 giorni</button>
+                <h5>oppure <a href="">acquista ora</a></h5>
+                <h4>Punti Salienti del piano</h4>
+                <ul>
+                  <li>&check;Nessun limite di spazio per i Finalmente</li>
+                  <li>&check;Cartelle offline su dispositivi mobili</li>
+                  <li>
+                    &check;Risparmio del 50% rispetto alle iscrizioni singole
+                  </li>
+                  <li>&check;Possibilità di inserire nuovi membri del team</li>
+                  <li>&check;Gestione dei permessi in base ai ruoli</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card w-30">
+              <div class="card-header">(+ICON) Azienda</div>
+              <div class="card-body">
+                <h3>Enterprice</h3>
+                <h4>Contattaci</h4>
+                <h5>-</h5>
+                <ul>
+                  <li>(+ICON) 10 o più utenti</li>
+                  <li>(+ICON) Soluzioni personalizzabili per la tua azienda</li>
+                  <li>
+                    (+ICON) Assistenza personalizzata per aiutare gli
+                    amministratori in una gestione su larga scala
+                  </li>
+                </ul>
+                <button>Contattaci</button>
+                <h5>oppure <a href="">acquista ora</a></h5>
+                <h4>Punti Salienti del piano</h4>
+                <ul>
+                  <li>&check;Cartelle offline su dispositivi mobili</li>
+                  <li>&check;Servizio assistenza 24/h</li>
+                  <li>&check;Possibilità di personalizzazione totale</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card w-100">
+              <div class="card-header">(+ICON) Team</div>
+              <div class="card-body">
+                <h3>Enterprice</h3>
+                <h4>Contatta l'ufficio vendite per i prezzi</h4>
+                <h5>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</h5>
+                <button>Contatta l'ufficio vendite</button>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3></h3>
-          <p></p>
-          <button></button>
-        </div>
+          
       </section>
-      <!-- THIRD SECTION -->
-      <section></section>
-      <!-- FOURTH SECTION -->
-      <section></section>
+      <!-- Section Partners -->
+      <section id="partners">
+        <div class="container"></div>
+      </section>
+
+       <!-- Section Solutions -->
+      <section id="solutions">
+        <div class="container"></div>
+      </section>
+
+       <!-- Section Brands -->
+      <section id="brands">
+        <div class="container"></div>
+      </section>
+
+       <!-- Section Work With Us -->
+      <section id="work-with-us">
+        <div class="container"></div>
+      </section>
+
+       <!-- Section Faq -->
+      <section id="faq">
+        <div class="container"></div>
+      </section>
     </main>
 
-    <footer></footer>
+     <!-- FOOTER -->
+    <footer>
+      <div class="container"></div>
+    </footer>
   </body>
 </html>
